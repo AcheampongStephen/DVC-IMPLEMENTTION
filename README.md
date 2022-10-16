@@ -68,3 +68,10 @@ python src/get_data.py
 ```
 dvc.repro
 ```
+
+STEP 2
+
+Under src directory, create 'split_data.py' to split the data and then save it in data/processed folder in data directory. Once done, documnent the stage in dvc.yaml and run dvc repro to track the stage, files, and directories.
+```
+dvc repro
+```
