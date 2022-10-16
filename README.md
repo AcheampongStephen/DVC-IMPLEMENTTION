@@ -75,3 +75,9 @@ Under src directory, create 'split_data.py' to split the data and then save it i
 ```
 dvc repro
 ```
+
+
+STEP 3
+
+
+1. Create 'train_and_evaluate.py' file under 'src' directory where it get and train and test data, and train the data against an algorithm, and then save the metrics and parameters of the model into the model directory.
