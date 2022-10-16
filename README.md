@@ -1,4 +1,8 @@
-## IMPLEMENTATION
+# IMPLEMENTATION
+
+### STEP 1
+
+<br>
 
 1. Create a virtual environment
 ```
