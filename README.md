@@ -37,3 +37,12 @@ dvc add data_given/winequality.csv
 ```
 git add . && git commit -m "initial commit"
 ```
+12. Create a github repository to push all the code to the online repository. 'Since REAME.md' file has been created, ignore while creating the repo.
+13. Paste the git remote link and press enter. This will create a master branch instead of main branch. Change it by :
+```
+git branch -M main
+```
+14. Push all the changes to github.
+```
+git add . && git commit -m "initial commit"
+```
