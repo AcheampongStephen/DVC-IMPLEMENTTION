@@ -84,3 +84,9 @@ Create 'train_and_evaluate.py' file under 'src' directory where it get and train
 ```
 dvc repro
 ```
+
+STAGE 4
+Create a folder named 'report' and within that folder, create a 'params.json' file and 'scores.json' file. This will save all the scores and parameters of the model. In the train_and_evaluate intiation in 'dvc.yaml', intiate a metric parameter. And in 'train_and_evaluate' file, the scores and parameters obtained from the model will be parsed into the json format in 'report' directory. The parameters created in needs to be updated in 'params.yaml'. After that,  run:
+```
+dvc repro
+```
