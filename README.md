@@ -55,6 +55,12 @@ git push origin main
 ```
 Run: 
 
-python src/get_data.py
+python src/get_data.py 
 ````
 17. Under 'src' directory,create a python file 'load_data.py' to load the dataset from the data source to the 'raw' directory in the 'data' directory. Thus, retrieving data from 'given_data'. A function will be created to load and save the data from 'get_data.py' file. The columns/features of the loaded data will then be transformed to remove spaces and replace it with an underscore value(_). After changing the columns, the dataset is then exported as a csv file which will then be loacted at 'data/raw/'.
+
+18. Inside 'dvc.yaml' file, the whole process of getting the the data from the source, extracting the raw data, and loadig the dataset must be initiated as a stage toghter with th desired output/outcome. For example, the whole output of the stage one is getting the datatest to the raw directory. Once intiting the steps in the dvc.yaml, run dvc repro to track the files and process with the help of cmd:
+
+```
+dvc.repro
+```
