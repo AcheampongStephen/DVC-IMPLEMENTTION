@@ -10,8 +10,11 @@ def read_params(config_path):
 
 def get_data(config_path):
     config = read_params(config_path)
-    print(config)
-
+    # print(config) This will return all the parameters and paths in 'params.yaml' file. From there, we can retrieve the data we want
+    data_path = config["data_source"]["s3_source"]
+    df = pd.read_csv(data_path, sep=",", encoding='utf-8')
+    # print(df)
+    return df
 
 
 if __name__ == "__main__":
