@@ -68,3 +68,6 @@ python src/get_data.py
 ```
 dvc.repro
 ```
+
+<br>
+### STEP 2

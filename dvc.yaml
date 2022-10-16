@@ -1,4 +1,4 @@
-#Loading the Dataset(STAGE 1)
+# Loading Stage 1
 stages:
   load_data:
     cmd: python src/load_data.py --config=params.yaml
@@ -8,3 +8,5 @@ stages:
     - data_given/winequality.csv
     outs:
     - data/raw/winequality.csv
+
+# Loading the Stage 2
