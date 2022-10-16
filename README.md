@@ -80,4 +80,7 @@ dvc repro
 STEP 3
 
 
-1. Create 'train_and_evaluate.py' file under 'src' directory where it get and train and test data, and train the data against an algorithm, and then save the metrics and parameters of the model into the model directory.
+Create 'train_and_evaluate.py' file under 'src' directory where it get and train and test data, and train the data against an algorithm, and then save the metrics and parameters of the model into the model directory. Initate the evaluation stages in dvc.yaml file and then run it to track the files, model, paths, and stages.
+```
+dvc repro
+```
