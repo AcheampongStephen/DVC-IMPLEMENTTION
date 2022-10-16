@@ -1,4 +1,4 @@
-#Loading the Dataset Stage
+#Loading the Dataset(STAGE 1)
 stages:
   load_data:
     cmd: python src/load_data.py --config=params.yaml
