@@ -52,3 +52,8 @@ git push origin main
 15. <p>In 'params.yaml' file, a base will be initiated where it will include the project name, random_state of the model, and the target column of the dataset/model. Also, the data source for which the data will be retrieved from will also initiated as a step. WHare to store the raw data retrived will also be initiated. From there, how the data will be splited, path of the training dataset, testing dataset, and the test size will be intiated and the paths where where these information will be initiated. The estimator which contains the algorithm used, and the parameters of the algorithm will be initiated. A model directory will be created to store the trained model. After that, push the codes to github.</p>
 
 16. <p>Under 'src' folder, create a python file that will get the dataset based on the parameters given in the 'params.yaml' to distribute the each dataset to it destined directory as stated in 'params.yaml'. The name of this python file is 'get_data.py'. Inside 'get_data.py' file, import 'os', 'yaml' and 'pandas' to read the data. Make sure these packages/libraries are included and run in 'requirements.txt' file. An argument will be intitated as 'config' which will automatically be the path of the 'params.yaml'. Once 'config' is called, it automatically refelcts all the paths in 'params.yaml'. After this arguments has been created, it needs to be parsed.</p>
+```
+Run: 
+
+python src/get_data.py
+````
